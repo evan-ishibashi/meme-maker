@@ -1,0 +1,111 @@
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: beige;
+
+
+}
+
+h1, h2 {
+  text-align: center;
+
+}
+
+#meme-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: large;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: end;
+}
+
+form > div > input {
+  width: 65%;
+  height: 20px;
+  margin-right: 10%;
+}
+
+#buttonsec {
+  align-self: center;
+}
+
+#memeButton {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(146, 58, 58);
+  font-size: 20px;
+}
+
+.img {
+  width: 700px;
+}
+
+.memeblock {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  transition: 1s;
+}
+
+
+
+
+
+.uppertxt {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 70px;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: white;
+  width: 100%;
+  top: 5%;
+
+}
+
+.lowertxt {
+  position: absolute;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 70px;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: white;
+  width: 100%;
+  bottom: 5%;
+}
+
+.xover {
+  position: absolute;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 50%;
+  bottom: 50%;
+  font-size: 300px;
+  width: 100%;
+  opacity: 0;
+  color: rgb(113, 111, 108);
+  transition: 1s;
+}
+
+.memeblock:hover {
+  opacity: .5;
+}
+
+.memeblock:hover .xover {
+  opacity: .5;
+}
